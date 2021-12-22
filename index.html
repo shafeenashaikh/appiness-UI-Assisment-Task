@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <title>appiness</title>
+  
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<section class="usage" id="usage">
+
+    <h1 class="heading">Testimonials</h1>
+    <div class="row">
+        <img class="divider" src="images/usage-img.png" alt="">
+        <div class="box-container">
+            <div class="box">
+                <p>It is long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="review" id="review">
+
+    <div class="box-container">
+        <div class="box">
+            <img src="C:\Users\intel\Desktop\UI Assisment Tast\img\Bitmap.png" alt="">
+            <h3>john deo</h3>
+            <h4>Software Engineer</h4>
+            <p>It is long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+          
+        </div>
+        <div class="box">
+            <img src="C:\Users\intel\Desktop\UI Assisment Tast\img\Bitmap.png" alt="">
+            <h3>john deo</h3>
+            <h4>Software Engineer</h4>
+            <p>It is long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+            
+        </div>
+        <div class="box">
+            <img src="C:\Users\intel\Desktop\UI Assisment Tast\img\Bitmap.png" alt="">
+            <h3>john deo</h3>
+            <h4>Software Engineer</h4>
+            <p>It is long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+          
+        </div>
+    </div>
+</section>
+<section >
+    <button class="btn">Book Appointment</button>
+</section>
+
+<section class="footer">
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+    </div>
+    <h1 class="credit"> Aster CMI All Rights Reserve </h1>
+</section>
+
+
+<!-- script part  -->
+
+<script>
+
+var swiper = new Swiper(".image-slider", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2,
+        slideShadows: true,
+    },
+    loop:true,
+    autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+    },
+});    
+
+let menu = document.querySelector('#menu-bar');
+let navbar = document.querySelector('.navbar');
+
+menu.addEventListener('click', () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('nav-toggle');
+});
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('nav-toggle');
+}
+
+</script>
+
+
+</body>
+</html>
